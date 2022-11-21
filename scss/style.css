@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "open";
+  src: url("../assets/font/OpenSans-VariableFont_wdth,wght.ttf");
+}
+
+@font-face {
+  font-family: "narrow";
+  src: url("../assets/font/PTSansNarrow-Regular.ttf");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "narrow";
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  position: relative;
+  background-color: #121618;
+}
+
+header:after {
+  background-image: linear-gradient(#121618, #121618), linear-gradient(-45deg, transparent 75%, #121618 75%), linear-gradient(45deg, transparent 75%, #121618 75%);
+  content: "";
+  display: block;
+  width: 100%;
+  position: absolute;
+  border: solid transparent;
+  background-color: #121618;
+  background-color: rgba(0, 0, 0, 0);
+  background-size: auto auto, 15px 15px, 15px 15px, 15px 15px, 15px 15px;
+  background-clip: padding-box, border-box, border-box, border-box, border-box;
+  background-origin: padding-box, border-box, border-box, border-box, border-box;
+}
+
+header nav {
+  height: 20rem;
+  padding: 0 2rem;
+}
+
+header nav .groupHeader {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .groupHeader div {
+  width: 3rem;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  left: 92%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+header nav .groupHeader div .activeMenu {
+  display: block;
+  content: "";
+  height: 2.5px;
+  width: 30px;
+  position: absolute;
+  background-color: white;
+}
+
+header nav .groupHeader div .activeMenu:before {
+  display: block;
+  content: "";
+  height: 2.5px;
+  width: 30px;
+  position: absolute;
+  background-color: white;
+  top: 1rem;
+}
+
+header nav .groupHeader div .activeMenu:after {
+  display: block;
+  content: "";
+  height: 2.5px;
+  width: 30px;
+  position: absolute;
+  background-color: white;
+  top: -1rem;
+}
+
+header nav .groupHeader img {
+  width: 15rem;
+}
+/*# sourceMappingURL=style.css.map */

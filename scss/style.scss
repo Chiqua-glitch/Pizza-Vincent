@@ -1,0 +1,54 @@
+//variable
+$primary-background: #121618;
+
+//font
+
+@font-face {
+  font-family: "open";
+  src: url("../assets/font/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+  font-family: "narrow";
+  src: url("../assets/font/PTSansNarrow-Regular.ttf");
+}
+
+//variable
+$white-color: white;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "narrow";
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+@mixin menu {
+    display: block;
+    content: "";
+    height: 2.5px;
+    width: 30px;
+    position: absolute;
+    background-color: $white-color;
+}
+
+//import
+@import "_header.scss";

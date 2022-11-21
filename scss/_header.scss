@@ -1,0 +1,59 @@
+header {
+  position: relative;
+  background-color: $primary-background;
+  &:after {
+    background-image: linear-gradient(rgba(18, 22, 24, 1), rgba(18, 22, 24, 1)),
+      linear-gradient(-45deg, transparent 75%, rgba(18, 22, 24, 1) 75%),
+      linear-gradient(45deg, transparent 75%, rgba(18, 22, 24, 1) 75%);
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    border: solid transparent;
+    background-color: #121618;
+    background-color: hsla(0, 0%, 0%, 0);
+    background-size: auto auto, 15px 15px, 15px 15px, 15px 15px, 15px 15px;
+    background-clip: padding-box, border-box, border-box, border-box, border-box;
+    background-origin: padding-box, border-box, border-box, border-box,
+      border-box;
+  }
+  nav {
+    height: 20rem;
+    padding: 0 2rem;
+    .groupHeader {
+      height: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      div {
+        width: 3rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-end;
+        height: 3rem;
+        align-items: center;
+        position: absolute;
+        left: 92%;
+        top: 50%;
+        transform: translateY(-50%);
+        .activeMenu {
+          @include menu;
+        }
+        .activeMenu {
+            &:before {
+                @include menu;
+                top: 1rem;
+            }
+            &:after {
+                @include menu;
+                top: -1rem;
+            }
+        }
+      }
+      img {
+        width: 15rem;
+      }
+    }
+  }
+}
